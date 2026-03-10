@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Formulários HTML - Básico</title>
+</head>
+<body>
+
+    <h1>Cadastro de Novo Aluno</h1>
+    <hr>
+
+    <form action="#" method="get">
+
+        <h3>Informações Pessoais</h3>
+
+        <p>
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        </p>
+
+        <p>
+            <label for="email">E-mail Corporativo:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="senha">Senha de Acesso:</label><br>
+            <input type="password" id="senha" name="senha">
+        </p>
+
+        <p>
+            <label for="idade">Idade:</label><br>
+            <input type="number" id="idade" name="idade" min="16" max="100">
+        </p>
+
+        <hr>
+
+        <h3>Preferências e Seleção</h3>
+
+        <p>
+            <label for="turno">Turno de Estudo:</label><br>
+            <select id="turno" name="turno">
+                <option value="">-- Selecione --</option>
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Nível de Conhecimento:</label><br>
+            <input type="radio" id="iniciante" name="nivel" value="iniciante">
+            <label for="iniciante">Iniciante</label>
+
+            <input type="radio" id="intermediario" name="nivel" value="intermediario">
+            <label for="intermediario">Intermediário</label>
+        </p>
+
+        <p>
+            <label>Linguagens de Interesse:</label><br>
+            <input type="checkbox" id="html" name="interesse" value="html">
+            <label for="html">HTML5</label>
+
+            <input type="checkbox" id="sql" name="interesse" value="sql">
+            <label for="sql">SQL</label>
+        </p>
+
+        <hr>
+
+        <h3>Mensagem e Envio</h3>
+
+        <p>
+            <label for="bio">Breve Biografia:</label><br>
+            <textarea id="bio" name="bio" rows="5" cols="40"></textarea>
+        </p>
+
+        <button type="submit">Enviar Dados</button>
+        <button type="reset">Limpar Tudo</button>
+
+    </form>
+
+</body>
+</html>
