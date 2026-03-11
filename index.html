@@ -18,6 +18,11 @@
             <label for="nome">Nome Completo:</label><br>
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
         </p>
+        <p>
+            <label for="sobrnome">Sobrnome</label><br>
+            <input nome="sobrnome" type="text" id="sobrnome" placeholder="Digite seu Sobrenome">
+        </p>
+
 
         <p>
             <label for="email">E-mail Corporativo:</label><br>
@@ -45,6 +50,7 @@
                 <option value="manha">Manhã</option>
                 <option value="tarde">Tarde</option>
                 <option value="noite">Noite</option>
+                <option value="integral">Integral</option>
             </select>
         </p>
 
@@ -55,6 +61,9 @@
 
             <input type="radio" id="intermediario" name="nivel" value="intermediario">
             <label for="intermediario">Intermediário</label>
+
+            <input type="radio" id="avançado" name="nivel" value="avançado">
+            <label for="avançado">Avançado</label>
         </p>
 
         <p>
@@ -64,18 +73,50 @@
 
             <input type="checkbox" id="sql" name="interesse" value="sql">
             <label for="sql">SQL</label>
+
+            <input type="checkbox" id="CSS3" name="interesse" value="CSS3">
+            <label for="CSS3">CSS3</label>
+
+            <input type="checkbox" id="javascript" name="interesse" value="javascript">
+            <label for="javascript">JavaScript</label>
         </p>
+
 
         <hr>
 
         <h3>Mensagem e Envio</h3>
 
         <p>
+            <label for="data">Data de Nacimento</label>
+            <input name="date" type="date" id="data">
+        </p>
+
+        <p><label for="telefone">Telefone/WhatsApp</label>
+        <input name="telefone" type="tel" id="telefone" placeholder="(47) 99999-9999">
+        </p>
+
+        <p>
+            <label>Como você conheceu a escola?</label><br>
+            <input type="radio" id="google" name="conheceu" value="google">
+            <label for="iniciante">Google</label>
+
+            <input type="radio" id="redes sociais" name="conheceu" value="redes sociais">
+            <label for="intermediario">Redes Sociais</label>
+
+            <input type="radio" id="indicação de amigo" name="conheceu" value="indicação de amigo">
+            <label for="avançado">Indicação de Amigo</label>
+
+            <input type="radio" id="outro" name="conheceu" value="outro">
+            <label for="avançado">Outros</label>
+        </p>
+
+
+        <p>
             <label for="bio">Breve Biografia:</label><br>
             <textarea id="bio" name="bio" rows="5" cols="40"></textarea>
         </p>
 
-        <button type="submit">Enviar Dados</button>
+        <button type="submit">Finalizar Cadastro</button>
         <button type="reset">Limpar Tudo</button>
 
     </form>
