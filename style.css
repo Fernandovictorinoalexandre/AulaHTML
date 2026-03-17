@@ -1,0 +1,12 @@
+body{
+    background-color:yellow;
+
+}
+
+div.legal {
+    background-color: blue;
+}
+
+div#main p.intro{
+    background-color: aquamarine;
+}
