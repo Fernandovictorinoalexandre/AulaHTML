@@ -1,0 +1,177 @@
+*, *::before, *::after{
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(127, 169, 217, 1) 0%, rgba(111, 175, 141, 1) 100%);
+}
+
+.form-grid{
+    width: 100%;
+    flex: 1;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    background:rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:20px;
+    padding: 20px;
+    transition:0.3s;
+    }
+
+    .form-grid label{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .form-grid input{
+        padding:12px;
+        border-radius:15px;
+        border:1px solid #ccc;
+        outline:none;
+        transition:0.2s;
+    }
+    .form-grid button{
+    grid-column:1 / 3; /* ocupa as duas colunas */
+    justify-self:center; /* centraliza */
+    }
+
+    /* CONTAINER */
+    #tudo {
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+        flex: 1;
+        display: flex;          
+        flex-direction: column; 
+    }
+
+    /* HEADER */
+    .topo_header {
+        width: 100%;
+        background: linear-gradient(135deg, #0f0c29, #0f0c29, #0f0c29);
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px solid #D9B56D;
+        box-shadow: 0 0 20px #D9B56D, 0 0 40px rgba(217, 181, 109, 0,3);
+    }
+    
+    .topo_header h1 {
+        font-size: 36px;
+        margin: 0;
+        color: #fff;
+        text-shadow: 0 0 10px #D9B56D, 0 0 20px #D9B56D, 0 0 40px #D9B56D;
+    }
+    
+    .topo_header h2 {
+        font-size: 18px;
+        color: #D9B56D;
+        text-shadow: 0 0 8px #D9B56D;
+    }
+
+   /* TITULO */
+    .principal h1{
+        font-size:40px;
+        text-align:center;
+        margin-bottom:40px;
+    }
+
+    /* BOTÃO PRINCIPAL */
+    .btn-biblioteca{
+        display:block;
+        margin:auto;
+        background:#2563eb;
+        color:white;
+        font-size:20px;
+        padding:18px 40px;
+        border:none;
+        border-radius:20px;
+        cursor:pointer;
+        box-shadow:0 10px 25px rgba(0,0,0,0.4);
+        transition:0.3s;
+    }
+
+    .btn-biblioteca:hover{
+        background:#1d4ed8;
+        transform:scale(1.05);
+    }
+
+    /* LIVROS */
+    .livros{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:20px;
+    }
+
+    /* CARD LIVRO */
+    .card{
+        background:rgba(255,255,255,0.1);
+        font-weight: bold;
+        backdrop-filter:blur(10px);
+        border:1px solid rgba(255,255,255,0.2);
+        border-radius:20px;
+        padding:20px;
+        transition:0.3s;
+    }
+
+    .card:hover{
+        transform:translateY(-5px);
+        box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .card h3{
+        color:#facc15;
+    }
+
+    .autor{
+        color:#cbd5e1;
+    }
+
+    /* PAINEL USUARIO */
+    .painel-usuario{
+        background:rgba(255,255,255,0.1);
+        backdrop-filter:blur(10px);
+        border:1px solid rgba(255,255,255,0.2);
+        border-radius:20px;
+        padding:25px;
+    }
+
+    .painel-usuario h2{
+        color:#facc15;
+    }
+
+    .status{
+        color:#22c55e;
+    }
+
+    /* RODAPÉ */
+    .rodape {
+        width: 100%;
+        background: linear-gradient(135deg, #0f0c29, #0f0c29, #0f0c29);
+        text-align: center;
+        padding: 30px;
+        color: #D9B56D;
+        border-top: 2px solid #D9B56D;
+        box-shadow: 0 0 20px #D9B56D, 0 0 40px rgba(168, 85, 247, 0.4);
+        text-shadow: 0 0 8px #D9B56D;
+    }
+
+    /* RESPONSIVO */
+    @media(max-width:1040px){
+
+        .container{
+            grid-template-columns:1fr;
+        }
+
+        .livros{
+            grid-template-columns:1fr;
+        }
+    }
