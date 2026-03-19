@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Fucionario</title>
+
+    <link rel="stylesheet" href="Style-Biblioteca.css">
+    
+</head>
+<body>
+   
+    <div class="topo_header">
+        <h1>BIBLIOTECA</h1>
+        <h2>Adiministrator</h2>
+    </div> 
+    <div id="tudo">
+        <form class="form-grid">
+            <h1><strong>Cadastro de Fucionario</strong></h1>
+            <br>
+            <label> Nome:<input name="nome" type="text" maxlength="40" required></label>
+            <label> Idade:<input name="idade" type="numero" maxlength="5"></label>
+            <label> Ano de Nacimento:<input name="date" type="date"> </label>
+            <label> CPF: <input name="cpf" type="numero" maxlength="11"required></label>
+            <label> Email:<input name="email" type="email"  required></label>
+            <label> Telefone:<input name="tel" type="tel"  maxlength="11" required></label>
+            <label> Endereço:<input name="endereço" type="text"></label>
+            <label> Cidade:<input name="cidade" type="text"></label>
+            <label> CEP:<input name="cep" type="numero"></label>
+            <label> Cargo:<input name="Cargo" type="text"></label>
+            <label> Data de Contratação:<input name="date" type="date"></label>
+            <label> Matrícula:<input name="matricula" type="number"></label>
+
+
+            <fieldset>
+            <label> Sexo</label>
+                <label><input name="sexo" type="radio" value="M">Masculino </label>
+                <label><input name="sexo" type="radio" value="F">Femenino </label>
+            </fieldset>
+            <fieldset>   
+            <label>Estado Civil</label>
+                <label><input name="civil" type="radio" value="C"/>Casado</label>
+                <label><input name="civil" type="radio" value="S"/>Solteiro</label>  
+                <label><input name="civil" type="radio" value="V"/>Viúvo</label>
+            </fieldset>
+
+                
+            <button class="btn-biblioteca">Cadastrar</button>        
+                
+                
+        </form>
+    </div>
+        <div class ="rodape">
+        <footer>
+            <small> </small>
+        </footer>
+    </div>
+    
+    
+</body>
+</html>
