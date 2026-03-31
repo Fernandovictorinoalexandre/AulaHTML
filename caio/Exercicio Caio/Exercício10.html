@@ -7,11 +7,15 @@
 </head>
 <body>
 
-    
+    <button>Botao</button>
     <p> Alerta Ameaça Honkai</p>
     <script>
-        let paragrafo = document.querySelector('p')
-        paragrafo.style.display = 'none'
+        let botao = document.querySelector('button')
+        botao.addEventListener('clice', function(){
+            let paragrafo = document.querySelector('p')
+            paragrafo.style.display = 'none';
+        })
+        
     </script>
     
 </body>
