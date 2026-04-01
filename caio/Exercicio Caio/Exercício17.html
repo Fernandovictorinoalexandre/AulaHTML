@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício17</title>
+    <style>
+        input{outline: 0;}
+    </style>
+</head>
+<body>
+    <input>
+    <script>
+        let inpt= document.querySelector('input');
+        inpt.addEventListener('input', function(){
+            if(inpt.value.length > 10){
+                inpt.style.borderColor = 'red'
+            }else{
+                inpt.style.borderColor =''
+            }
+        });
+    </script>
+    
+</body>
+</html>
