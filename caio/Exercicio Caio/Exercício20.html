@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício20</title>
+</head>
+<body>
+
+    <button id="btn_vermelho">Vermelho</button>
+    <button id="btn_amarelo">Amarelo</button>
+    <button id="btn_verde">Verde</button>
+    <div style=" width: 200px; height: 200px;"></div>
+
+    <script>
+        let btnVermelho=document.querySelector('#btn_vermelho');
+        let btnAmarelo=document.querySelector('#btn_amarelo');
+        let btnVerde=document.querySelector('#btn_verde');
+        let quadrado = document.querySelector("div")
+
+        btnVermelho.addEventListener('click', function(){
+            quadrado.style.backgroundColor = 'red'
+        })
+        btnAmarelo.addEventListener('click', function(){
+            quadrado.style.backgroundColor = 'yellow'
+        })
+        btnVerde.addEventListener('click', function(){
+            quadrado.style.backgroundColor = 'green'
+        })
+    </script>
+    
+</body>
+</html>
