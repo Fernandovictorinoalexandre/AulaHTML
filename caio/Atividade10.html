@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade10</title>
+</head>
+<body>
+
+    <script>
+        let deMaior=0;
+        let deMenor=0;
+        while(true){
+            let idade=Number(prompt("Informe suas Idades(Aperte 0 para parar)"))
+            if (idade===0){
+                break;
+            }
+            if(idade >=18){
+                deMaior++;
+            }else{
+                deMenor++;
+            };
+        }
+
+        alert("São" +deMaior+ "Maiores de 18 anos" +
+            "\n São" +deMenor+ "Menores de 18 anos")
+    </script>
+    
+</body>
+</html>
