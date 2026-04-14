@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade9</title>
+</head>
+<body>
+
+    <script>
+        let par=0;
+        let impar=0;
+        let maior10=0;
+
+    
+        for(let i = 1; i<=10;i++){
+            let numero=Number(prompt("Informe 10 numeros:"));
+            if (numero % 2 ===0){
+                par++;
+            }else{
+                impar++;
+            }
+
+            if(numero >= 10){
+                maior10++;
+            }
+    
+        }
+
+        alert("São" + par + "Pares" +
+                "\n São" + impar + "Impares" +
+                "\n São" + maior10 + "Maiores que 10")
+        </script>
+    
+</body>
+</html>
